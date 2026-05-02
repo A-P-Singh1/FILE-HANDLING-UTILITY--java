@@ -1,0 +1,73 @@
+import java.io.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        try {
+            // Create safe temp file (works everywhere)
+            File file = File.createTempFile("sample", ".txt");
+            String fileName = file.getAbsolutePath();
+
+            // USER INPUT
+            System.out.println("Enter text:");
+            String inputText = sc.nextLine();
+
+            // WRITE to file
+            FileWriter fw = new FileWriter(fileName);
+            fw.write(inputText);
+            fw.close();
+
+            System.out.println("\nFile Created Successfully!");
+
+            // READ file
+            BufferedReader br = new BufferedReader(new FileReader(fileName));
+            String line;
+
+            System.out.println("\nReading File:");
+            while ((line = br.readLine()) != null) {
+                System.out.println(line);
+            }
+            br.close();
+
+            // MODIFY
+            System.out.println("\nEnter word to replace:");
+            String oldWord = sc.nextLine();
+
+            System.out.println("Enter new word:");
+            String newWord = sc.nextLine();
+
+            // Read again
+            br = new BufferedReader(new FileReader(fileName));
+            StringBuilder sb = new StringBuilder();
+
+            while ((line = br.readLine()) != null) {
+                sb.append(line).append("\n");
+            }
+            br.close();
+
+            // Replace words
+            String modified = sb.toString().replace(oldWord, newWord);
+
+            // Write modified content
+            fw = new FileWriter(fileName);
+            fw.write(modified);
+            fw.close();
+
+            // Final Output
+            System.out.println("\nAfter Modification:");
+            br = new BufferedReader(new FileReader(fileName));
+            while ((line = br.readLine()) != null) {
+                System.out.println(line);
+            }
+            br.close();
+
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+
+        sc.close();
+    }
+}
