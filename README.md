@@ -1,4 +1,13 @@
-# FILE-HANDLING-UTILITY--java<img width="335" height="425" alt="Screenshot 2026-04-12 011040" src="https://github.com/user-attachments/assets/3a80290b-9042-4381-b927-ab39ab68fa44" />
+# FILE-HANDLING-UTILITY--java
+
+COMPANY : CODTECH IT SOLUTIONS
+NAME : ADITYA PRATAP SINGH
+INTERN ID : CTIS8188
+DOMAIN : JAVA PROGRAMMING
+DURATION : 6 WEEKS
+MENTOR : NEELA SANTHOSH KUMAR
+
+
 
 
 This project focuses on the implementation of a File Handling Utility using Java, which is a fundamental concept for managing and storing data permanently. The primary objective of this project is to understand and demonstrate how to perform essential file operations—reading, writing, and modifying text files—using Java in an efficient and structured manner.
@@ -47,3 +56,8 @@ Conclusion
 This project helped in building a strong understanding of file handling concepts in Java, including how data is stored, accessed, and updated in text files. It also provided practical exposure to handling real-world problems such as error management and user interaction.
 
 By implementing this utility, I gained valuable insights into Java’s input/output mechanisms and learned how persistent data storage works in applications. The knowledge acquired through this project can be applied to more advanced systems such as file-based databases, logging frameworks, and content management tools.
+
+
+OUTPUT :<img width="335" height="425" alt="Screenshot 2026-04-12 011040" src="https://github.com/user-attachments/assets/bb6aa1e0-8c02-4e36-a126-030f3ef7a25e" />
+
+
